@@ -18,7 +18,7 @@ class EvenAndOdd extends Component{
         this.setState({userInput:x.target.value})
     }
 
-    handleClick(x){
+    handleClick(){
         const{userInput}=this.state;
         let newArr = userInput.split(',');
 
@@ -33,10 +33,10 @@ class EvenAndOdd extends Component{
                 arrOdds.push(parseInt(e,10));
             }
         })
-        console.log(arrEvens);
+        //console.log(arrEvens);
         this.setState({evenArray: arrEvens});
         this.setState({oddArray: arrOdds});
-        console.log(this.state.evenArray)
+        //console.log(this.state.evenArray)
     }
 
 
