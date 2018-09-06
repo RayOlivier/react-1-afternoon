@@ -26,7 +26,7 @@ class FilterObject extends Component{
     handleClick(){
         //solve here
         const {unFilteredArray, userInput} = this.state;
-        let newArr = unFilteredArray.filter((e,i,arr)=>{
+        let newArr = unFilteredArray.filter((e)=>{
             for(let key in e){
                 console.log(key);
                 if(key===userInput){
