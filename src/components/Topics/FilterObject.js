@@ -32,7 +32,7 @@ class FilterObject extends Component{
                 if(key===userInput){
                     return true;
                 }
-                else return false
+                //else return false
             }
             
         })

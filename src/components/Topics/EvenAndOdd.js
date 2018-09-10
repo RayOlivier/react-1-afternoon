@@ -26,11 +26,11 @@ class EvenAndOdd extends Component{
         let arrOdds=[];
 
         newArr.forEach((e,i,arr)=>{
-            if(e%2===0){
-                arrEvens.push(parseInt(e,10));
+            if(e%2===0.0){
+                arrEvens.push(parseInt(e,10.0));
             }
             else{
-                arrOdds.push(parseInt(e,10));
+                arrOdds.push(parseInt(e,10.0));
             }
         })
         //console.log(arrEvens);

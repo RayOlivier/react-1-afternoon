@@ -6,9 +6,9 @@ class Sum extends Component{
         super();
 
         this.state={
-            num1: 0,
-            num2: 0,
-            sum: 0
+            num1: 0.0,
+            num2: 0.0,
+            sum: 0.0
         }
 
         this.handleChange1=this.handleChange1.bind(this)
@@ -18,12 +18,12 @@ class Sum extends Component{
 
     handleChange1(x){
         console.log(x)
-        this.setState({num1: parseInt(x,10)})
+        this.setState({num1: parseInt(x,10.0)})
         console.log(this.state.num1);
     }
 
     handleChange2(x){
-        this.setState({num2: parseInt(x,10)})
+        this.setState({num2: parseInt(x,10.0)})
         console.log(this.state.num2)
     }
 
